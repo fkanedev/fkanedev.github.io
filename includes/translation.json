@@ -1,0 +1,346 @@
+{
+	"enFrSiteTitle" : {
+		"en" : "Fadel KANE - Cloud Software Engineering",
+		"fr" : "Fadel KANE - Ingénierie Logiciel Cloud"
+	},
+	"enFrHomeMenu" : {
+		"en" : "HOME",
+		"fr" : "ACCUEIL"
+	},
+	"enFrAboutMenu" : {
+		"en" : "ABOUT",
+		"fr" : "À PROPOS"
+	},
+	"enFrJobRole" : {
+		"en" : "CLOUD SOFTWARE ENGINEER",
+		"fr" : "INGÉNIEUR LOGICIEL CLOUD"
+	},
+	"enFrBrandStatement" : {
+		"en" : "Innovative software solutions and optimized cloud strategies for technological excellence",
+		"fr" : "Solutions logicielles innovantes et stratégies cloud optimisées pour une excellence technologique"
+	},
+	"enFrAboutProfile" : {
+		"en" : "Cloud-Native Software Engineer",
+		"fr" : "Ingénieur Logiciel Cloud-Natif"
+	},
+	"enFrAboutMeTitle" : {
+		"en" : "About me",
+		"fr" : "Qui suis-je"
+	},
+	"enFrValueProposition" : {
+		"en" : "<img width=\"36\" height=\"36\" src=\"assets/images/icons8-quote-48-left.png\" alt=\"quote-left\" class=\"quote-icon-left\"/> As a Cloud Software Engineer, I'm your trusted partner in the race to innovate. From agile cloud-native software design to strategic migration, I offer you informed insight to maximize operational efficiency, robust security and cost optimization in the complex world of cloud computing. My passion for design, enriched by core values such as a sense of service, a taste for challenge, and adaptability in the face of change, drives my creativity. With a constant quest for harmony in every collaboration, I'm ready to seize the opportunity to learn alongside a dynamic team and make a significant contribution to every cloud project, propelling your company towards technological excellence. <img width=\"36\" height=\"36\" src=\"assets/images/icons8-quote-48-right.png\" alt=\"quote-right\" class=\"quote-icon-right\"/>",
+		"fr" : "<img width=\"36\" height=\"36\" src=\"assets/images/icons8-quote-48-left.png\" alt=\"quote-left\" class=\"quote-icon-left\"/> En tant qu'ingénieur logiciel Cloud, je suis votre partenaire de confiance dans la course à l'innovation. De la conception agile de logiciels cloud-natifs à la migration stratégique, je vous offre une vision éclairée pour maximiser l'efficacité opérationnelle, la sécurité robuste et l'optimisation des coûts dans l'univers complexe du cloud computing. Ma passion pour la conception, enrichie par des valeurs essentielles telles que le sens du service, le goût du défi, et une adaptabilité face aux changements, stimule ma créativité. Avec une recherche constante d'harmonie dans chaque collaboration, je suis prêt à saisir l'opportunité d'apprendre aux côtés d'une équipe dynamique et contribuer de manière significative à chaque projet cloud, propulsant ainsi votre entreprise vers l'excellence technologique. <img width=\"36\" height=\"36\" src=\"assets/images/icons8-quote-48-right.png\" alt=\"quote-right\" class=\"quote-icon-right\"/>"
+	},
+	"enFrSkillsTitle" : {
+		"en" : "Skills",
+		"fr" : "Compétences"
+	},
+	"enFrSkillTitle1" : {
+		"en" : "PROGRAMMING LANGUAGES",
+		"fr" : "LANGAGES DE PROGRAMMATION"
+	},
+	"enFrSkillContent1" : {
+		"en" : "Proficiency in languages such as <em>#Python, #Java, #HTML5, #CSS3, #JavaScript</em>. Ability to choose the appropriate language based on project requirements.",
+		"fr" : "Maîtrise de langages tels que #Python, #Java, #HTML5, #CSS3, #JavaScript. Capacité à choisir le langage approprié en fonction des exigences du projet."
+	},
+	"enFrSkillTitle2" : {
+		"en" : "CLOUD-NATIVE DEVELOPMENT",
+		"fr" : "DÉVELOPPEMENT CLOUD-NATIF"
+	},
+	"enFrSkillContent2" : {
+		"en" : "Design and development of cloud-native applications. Expertise in using cloud-native technologies such as containers <em>#Docker</em> and container orchestrators <em>#Kubernetes</em>.",
+		"fr" : "Conception et développement d'applications cloud-native. Expertise dans l'utilisation de technologies cloud-native telles que les conteneurs <em>#Docker</em> et les orchestrateurs de conteneurs <em>#Kubernetes.</em>"
+	},
+	"enFrSkillTitle3" : {
+		"en" : "CLOUD ARCHITECTURE",
+		"fr" : "ARCHITECTURE CLOUD"
+	},
+	"enFrSkillContent3" : {
+		"en" : "Advanced design of cloud architectures, optimizing the scalability, availability, and security of applications through the judicious choice of cloud services.",
+		"fr" : "Conception avancée d'architectures cloud, optimisant la scalabilité, la disponibilité et la sécurité des applications grâce à un choix judicieux de services cloud."
+	},
+	"enFrSkillTitle4" : {
+		"en" : "CLOUD PLATFORMS",
+		"fr" : "PLATEFORMES CLOUD"
+	},
+	"enFrSkillContent4" : {
+		"en" : "Proficiency in major cloud platforms such as <em>#IBMCloud, #GCP, #AWS</em>. Deep understanding of cloud services to optimize architecture and performance.",
+		"fr" : "Maîtrise des principales plateformes cloud telles que <em>#IBMCloud, #GCP, #AWS</em>. Compréhension approfondie des services cloud pour optimiser l'architecture et les performances."
+	},
+	"enFrSkillTitle5" : {
+		"en" : "FRONT-END DEVELOPMENT",
+		"fr" : "DÉVELOPPEMENT FRONT-END"
+	},
+	"enFrSkillContent5" : {
+		"en" : "Proficiency in modern front-end frameworks and libraries such as <em>#React, #Bootstrap</em>.",
+		"fr" : "Maîtrise des frameworks et bibliothèques front-end modernes tels que <em>#React, #Bootstrap.</em>"
+	},
+	"enFrSkillTitle6" : {
+		"en" : "BACK-END DEVELOPMENT",
+		"fr" : "DÉVELOPPEMENT BACK-END"
+	},
+	"enFrSkillContent6" : {
+		"en" : "Implementation of server logic using back-end frameworks such as <em>#Express, #Django, and #Flask</em>. Creation of <em>#RESTAPI and #APISecurityBestPractices</em>.",
+		"fr" : "Implémentation de la logique serveur en utilisant des frameworks back-end tels que <em>#Express, #Django et #Flask</em>. Création de <em>#RESTAPI et #APISecurityBestPractices.</em>"
+	},
+	"enFrSkillTitle7" : {
+		"en" : "DATABASE",
+		"fr" : "BASE DE DONNÉES"
+	},
+	"enFrSkillContent7" : {
+		"en" : "Experience with a variety of databases, both relational and NoSQL, including <em>#PostGreSQL, #SQLite, #MongoDB</em>, as well as cloud database services <em>#DBaas</em> such as <em>#IBMCloudant</em> and <em>#GoogleCloudFirestore.</em>",
+		"fr" : "Expérience avec diverses bases de données, relationnelles et NoSQL, y compris <em>#PostGreSQL, #SQLite, #MongoDB</em>, ainsi que des services de bases de données cloud <em>#DBaas</em> tels que <em>#IBMCloudant</em> et <em>#GoogleCloudFirestore.</em>"
+	},
+	"enFrSkillTitle8" : {
+		"en" : "SPECIFIC CLOUD SERVICES",
+		"fr" : "SERVICES CLOUD SPÉCIFIQUES"
+	},
+	"enFrSkillContent8" : {
+		"en" : "Proficient in the integration and effective use of specific cloud services.",
+		"fr" : "Maîtrise de l'intégration et de l'utilisation efficace de services cloud spécifiques."
+	},
+	"enFrSkillTitle9" : {
+		"en" : "AUTOMATION AND INFRASTRUCTURE AS CODE (IaC)",
+		"fr" : "AUTOMATISATION ET INFRASTRUCTURE EN TANT QUE CODE (IaC)"
+	},
+	"enFrSkillContent9" : {
+		"en" : "Using tools such as <em>#Terraform, #Ansible</em> to automate the management of cloud infrastructure. Followed the principles of Infrastructure as Code <em>#IaC</em>.",
+		"fr" : "Utilisation d'outils tels que <em>#Terraform, #Ansible</em> pour automatiser la gestion de l'infrastructure cloud. Application des principes de l'Infrastructure as Code <em>#IaC</em>."
+	},
+	"enFrSkillTitle10" : {
+		"en" : "CLOUD SECURITY",
+		"fr" : "SÉCURITÉ CLOUD"
+	},
+	"enFrSkillContent10" : {
+		"en" : "Identity management, access control, monitoring and compliance with cloud security best practices.",
+		"fr" : "Gestion des identités, contrôle d'accès, surveillance et conformité avec les meilleures pratiques en matière de sécurité cloud"
+	},
+	"enFrSkillTitle11" : {
+		"en" : "APPLICATION SECURITY",
+		"fr" : "SECURITÉ DES APPLICATIONS"
+	},
+	"enFrSkillContent11" : {
+		"en" : "Integration of security mechanisms at all levels of the application, using frameworks and technologies related to security testing, vulnerability analysis, secrets management, and secure code development practices.",
+		"fr" : "Intégration des mécanismes de sécurité à tous les niveaux de l'application, en utilisant des frameworks et des technologies liés aux tests de sécurité, à l'analyse des vulnérabilités, à la gestion des secrets et aux pratiques de développement de code sécurisé."
+	},
+	"enFrSkillTitle12" : {
+		"en" : "PERFORMANCE OPTIMIZATION",
+		"fr" : "OPTIMISATION DES PERFORMANCES"
+	},
+	"enFrSkillContent12" : {
+		"en" : "Applications and cloud infrastructure performance, identification and resolution of congestion points through proactive <em>#Monitoring</em>, log management, log analysis and utilizing telemetry for enhanced <em>#Observability.</em>",
+		"fr" : "Performances des applications et de l'infrastructure cloud, identification et résolution des points de congestion grâce à une <em>#Surveillance</em> proactive, à la gestion et à l'analyse des journaux et à l'utilisation de la télémétrie pour une meilleure <em>#Observabilité</em>."
+	},
+	"enFrSkillTitle13" : {
+		"en" : "CONTINUOUS INTEGRATION AND CONTINUOUS DEPLOYMENT (CI/CD)",
+		"fr" : "INTÉGRATION CONTINUE ET DÉPLOIEMENT CONTINU (CI/CD)"
+	},
+	"enFrSkillContent13" : {
+		"en" : "Configuration and management of CI/CD pipelines using <em>#GitHubActions, #Tekton, #OpenShift</em>, and <em>#ArgoCD</em> to automate testing, deployments, and ensure continuous delivery.",
+		"fr" : "Configuration et gestion des pipelines CI/CD en utilisant <em>#GitHubActions, #Tekton, #OpenShift</em>, et <em>#ArgoCD</em> pour automatiser les tests, les déploiements et garantir une livraison continue."
+	},
+	"enFrSkillTitle14" : {
+		"en" : "COLLABORATION AND COMMUNICATION (DevOps)",
+		"fr" : "COLLABORATION ET COMMUNICATION (DevOps)"
+	},
+	"enFrSkillContent14" : {
+		"en" : "Ability to collaborate effectively with multidisciplinary teams, including DevOps teams, front-end and back-end engineers, using tools like <em>#Trello, #GitHub</em>, and <em>#Jira</em> to ensure consistency and efficiency in cloud development.",
+		"fr" : "Capacité à collaborer efficacement avec des équipes multidisciplinaires, y compris des équipes DevOps, des ingénieurs front-end et back-end, en utilisant des outils tels que <em>#Trello, #GitHub</em>, et <em>#Jira</em> pour assurer la cohérence et l'efficacité dans le développement cloud."
+	},
+	"enFrSkillTitle15" : {
+		"en" : " ... AND STAY TUNED",
+		"fr" : " ... ET RESTEZ À L'ÉCOUTE"
+	},
+	"enFrSkillContent15" : {
+		"en" : "Proactively growing my expertise, with new skills on the way.",
+		"fr" : "De nouvelles compétences à venir, pour renforcer et élargir mon expertise."
+	},
+	"enFrEndAbout" : {
+		"en" : "Check out my portfolio and see how my skills can contribute to your project's success.",
+		"fr" : "Consultez mon portfolio et découvrez comment mes compétences peuvent contribuer au succès de votre projet."
+	},
+	"enFrServicesTitle" : {
+		"en" : "My Services",
+		"fr" : "Mes Services"
+	},
+	"enFrStartServices" : {
+		"en" : "Enhance your business value and achieve your goals with tailored software services.",
+		"fr" : "Boostez votre valeur commerciale et atteignez vos objectifs grâce à des services logiciels sur mesure."
+	},
+	"enFrServiceTitle1" : {
+		"en" : "CLOUD-NATIVE DEVELOPMENT",
+		"fr" : "DÉVELOPPEMENT CLOUD NATIF"
+	},
+	"enFrServiceContent1" : {
+		"en" : "Design and develop cloud-native applications to maximize the benefits of cloud environments in terms of scalability, resilience and flexibility.",
+		"fr" : "Conception et développement d'applications cloud-natives pour maximiser les avantages des environnements cloud en termes de scalabilité, de résilience et de flexibilité."
+	},
+	"enFrServiceTitle2" : {
+		"en" : "MIGRATION AND OPTIMIZATION",
+		"fr" : "MIGRATION ET OPTIMISATION"
+	},
+	"enFrServiceContent2" : {
+		"en" : "Efficiently migrate existing applications to cloud platforms and optimize infrastructures for optimal cloud performance.",
+		"fr" : "Migration efficace des applications existantes vers les plateformes cloud et optimisation des infrastructures pour une performance cloud optimale."
+	},
+	"enFrServiceTitle3" : {
+		"en" : "CLOUD SERVICES INTEGRATION",
+		"fr" : "INTÉGRATION DE SERVICES CLOUD"
+	},
+	"enFrServiceContent3" : {
+		"en" : "Integrate and use various cloud services to enrich the functionality of applications and software solutions.",
+		"fr" : "Intégration et utilisation de divers services cloud pour enrichir la fonctionnalité des applications et des solutions logicielles."
+	},
+	"enFrEndServices" : {
+		"en" : "Let’s get started ! Contact me to learn more about my services and upcoming offerings.",
+		"fr" : "Commençons ! Contactez-moi pour en savoir plus sur mes services et offres à venir."
+	},
+	"enFrPortfolioTitle" : {
+		"en" : "Portfolio",
+		"fr" : "Portfolio"
+	},
+	"enFrStartPortfolio" : {
+		"en" : "A story illustrating the foundations and growth of my experience through a selection of projects addressing real-world business challenges.",
+		"fr" : "Un récit illustrant les fondations et l'évolution de mon expérience à travers une sélection de projets répondant à des enjeux concrets pour les entreprises."
+	},
+	"enFrProjectTitle1" : {
+		"en" : "Company's Budget Allocation App",
+		"fr" : "Application d'Allocation Budgétaire d'Entreprise"
+	},
+	"enFrProjectTitle2" : {
+		"en" : "Customer Account Microservice",
+		"fr" : "Microservice de Gestion de Comptes Clients"
+	},
+	"enFrProjectTitle3" : {
+		"en" : "Car Management Application",
+		"fr" : "Application de Gestion de Voitures"
+	},
+	"enFrProjectTitle4" : {
+		"en" : "Online Course Application",
+		"fr" : "Application de Cours en Ligne"
+	},
+	"enFrProjectTitle5" : {
+		"en" : "Book Reviews Microservice",
+		"fr" : "Microservice de Critiques de Livres"
+	},
+	"enFrProjectTitle6" : {
+		"en" : "Counter Management Microservice",
+		"fr" : "Microservice de Gestion de Compteurs"
+	},
+	"enFrProjectDescription1" : {
+		"en" : "This project involves developing a budgeting application using React.js. The application allows users to manage their finances by adding, editing, and deleting expenses while tracking their remaining budget.",
+		"fr" : "Ce projet consiste à développer une application de budgétisation en utilisant React.js. L'application permet aux utilisateurs de gérer leurs finances en ajoutant, modifiant et supprimant des dépenses tout en suivant leur budget restant."
+	},
+	"enFrProjectFeaturesTitle" : {
+		"en" : "Key Features",
+		"fr" : "Caractéristiques Clés"
+	},
+	"enFrProjectFeatures1" : {
+		"en" : "<li>Add, edit, and delete expenses</li>  <li>Track total expenses and remaining budget</li> <li>Dynamic adjustment of budget and currency settings</li> <li>User-friendly interface with responsive design</li>",	
+		"fr" : "<li>Ajouter, modifier et supprimer des dépenses</li> <li>Suivre les dépenses totales et le budget restant</li> <li>Ajustement dynamique du budget et des paramètres de devise</li> <li>Interface conviviale avec un design réactif</li>"
+	},
+	"enFrProjectGithubButton" : {
+		"en" : "View Github Repository",
+		"fr" : "Voir le Dépôt Github"
+	},
+	"enFrProjectDescription2" : {
+		"en" : "A Flask-based REST API microservice designed for managing customer accounts, using Test-Driven Development (TDD), integrating CI/CD Pipelines, and implementing both security headers and CORS policies.",
+		"fr" : "Un microservice REST API basé sur Flask conçu pour gérer les comptes clients, utilisant le développement piloté par les tests (TDD), intégrant des pipelines CI/CD, et mettant en oeuvre à la fois des en-têtes de sécurité et des politiques CORS."
+	},
+	"enFrProjectFeatures2" : {
+		"en" : "<li>Create, read, update, delete, and list accounts.</li> <li>Apply some secure code practices: <ul> <li>Security headers</li> <li>CORS policies.</li> </ul> </li>",
+		"fr" : "<li>Créer, lire, mettre à jour, supprimer et lister des comptes.</li> <li>Appliquer certaines pratiques de code sécurisé : <ul> <li>En-têtes de sécurité</li> <li>Politiques CORS.</li> </ul> </li>"
+	},
+	"enFrProjectDescription3" : {
+		"en" : "This project aims to develop a Django-based web application for comprehensive cars dealership management and vehicle reviews with user authentication, role-based access, and IBM Cloud integration.",
+		"fr" : "Ce projet vise à développer une application web basée sur Django pour la gestion complète des concessions automobiles et des avis sur les véhicules avec authentification des utilisateurs, accès basé sur les rôles, et intégration avec IBM Cloud."
+	},
+	"enFrProjectFeatures3" : {
+		"en" : "<li>Dealership Management</li> <li>Vehicle Reviews</li> <li>Sentiment Analysis</li> <li>Dealer Details</li> <li>User Interaction</li>",
+		"fr" : "<li>Gestion des Concessions</li> <li>Revue de Véhicules</li> <li>Analyse de Sentiments</li> <li>Détails du Concessionnaire</li> <li>Interaction Utilisateur</li>"
+	},
+	"enFrProjectDescription4" : {
+		"en" : "This project aims developing a Django-based online course management system. It is designed to facilitate course creation, student enrollment and assessments.",
+		"fr" : "Ce projet vise à développer un système de gestion de cours en ligne basé sur Django. Il est conçu pour faciliter la création de cours, l'inscription des étudiants et les évaluations."
+	},
+	"enFrProjectFeatures4" : {
+		"en" : "<li>Course Management</li> <li>User Authentication</li> <li>Enrollment Management</li> <li>Assessment Feature</li>",
+		"fr" : "<li>Gestion des Cours</li> <li>Authentification des Utilisateurs</li> <li>Gestion des Inscriptions</li> <li>Fonctionnalité d'Évaluation</li>"
+	},
+	"enFrProjectDescription5" : {
+		"en" : "A RESTful web service powered by Express.js for managing book reviews, featuring CRUD (Create, Read, Update, Delete) endpoints, as well as user authentication and session management.",
+		"fr" : "Un service web RESTful alimenté par Express.js pour la gestion des critiques de livres, avec des points de terminaison CRUD (Créer, Lire, Mettre à jour, Supprimer), ainsi que l'authentification des utilisateurs et la gestion des sessions."
+	},
+	"enFrProjectFeatures5" : {
+		"en" : "<li>Manage book reviews with CRUD operations.</li> <li>User authentication and session management using JWT.</li> <li>Separate routes for public and authenticated users.</li> <li>Asynchronous operations with Promises for database interactions.</li>",
+		"fr" : "<li>Gérer les critiques de livres avec des opérations CRUD.</li> <li>Authentification des utilisateurs et gestion des sessions via JWT.</li> <li>Routes séparées pour les utilisateurs publics et authentifiés.</li> <li>Opérations asynchrones avec des Promesses pour les interactions avec la base de données.</li>"
+	},
+	"enFrProjectDescription6" : {
+		"en" : "Flask-based REST API microservice designed for managing and tracking counters, highlighting the practical application of Continuous Integration (CI) and Continuous Delivery (CD) using GitHub Actions and OpenShift Pipelines.",
+		"fr" : "Microservice REST API basé sur Flask conçu pour gérer et suivre les compteurs, mettant en évidence l'application pratique de l'intégration continue (CI) et de la livraison continue (CD) en utilisant GitHub Actions et OpenShift Pipelines."
+	},
+	"enFrProjectFeatures6" : {
+		"en" : "<li>Create, read, update, delete, and list counters.</li> <li>Search for counters by name and value.</li>",
+		"fr" : "<li>Créer, lire, mettre à jour, supprimer et lister les compteurs.</li> <li>Rechercher des compteurs par nom et valeur.</li>"
+	},
+	"enFrEndPortfolio" : {
+		"en" : "Head to my GitHub to see a wider collection of my projects.",
+		"fr" : "Rendez-vous sur mon GitHub pour voir une collection plus large de mes projets."
+	},
+	"enFrEndPortfolioButton" : {
+		"en" : "My GitHub",
+		"fr" : "Mon GitHub"
+	},
+	"enFrStartContact" : {
+		"en" : "Collaborations, inquiries and contributions... <br> I look forward to hearing from you soon.<br> Get in touch using the form below or connect with me on social media.",
+		"fr" : "Collaborations, questions et contributions... <br> J'ai hâte d'avoir de vos nouvelles.<br> Contactez-moi via le formulaire ci-dessous ou sur les réseaux sociaux."
+	},
+	"enFrPlaceholderContactName" : {
+		"en" : "Your Name",
+		"fr" : "Nom"
+	},
+	"enFrPlaceholderContactMail" : {
+		"en" : "Your Email",
+		"fr" : "Email"
+	},
+	"enFrPlaceholderContactSubject" : {
+		"en" : "Subject",
+		"fr" : "Objet"
+	},
+	"enFrContactFormCancelButton" : {
+		"en" : "Cancel",
+		"fr" : "Annuler"
+	},
+	"enFrContactFormSubmitButton" : {
+		"en" : "Send Message",
+		"fr" : "Envoyer"
+	},
+	"enFrContactFormSentMessage" : {
+		"en" : "Your message has been sent successfully!",
+		"fr" : "Votre message a été envoyé avec succès!"
+	},
+	"enFrFooterCopyright" : {
+		"en" : "&copy; 2024 Fadel KANE. All rights reserved.",
+		"fr" : "&copy; 2024 Fadel KANE. Tous droits réservés."
+	},
+	"enFrFooterLegalNotice" : {
+		"en" : "Legal Notice",
+		"fr" : "Mentions légales"
+	},
+	"enFrFooterPrivacyPolicy" : {
+		"en" : "Privacy Policy",
+		"fr" : "Politique de confidentialité"
+	},
+	"enFrFooterPhotoCredits" : {
+		"en" : "Photo Credits",
+		"fr" : "Crédits Photos"
+	},
+	"enFrFooterLicense" : {
+		"en" : "License Creative Commons BY-NC-SA 4.0",
+		"fr" : "Licence Creative Commons BY-NC-SA 4.0"
+	},
+	"enFrModalClose" : {
+		"en" : "Close",
+		"fr" : "Fermer"
+	}
+}

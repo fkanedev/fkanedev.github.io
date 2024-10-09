@@ -58,13 +58,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		
 		var nextLang = (currentLang === "en") ? "fr" : "en";
 		document.querySelector('body').lang = nextLang;
-		
-		table = JSON.parse(data.translationContent);
+	    
+		// console.log(data.translationContent);
+	    	// console.log(data);
+		table = data; // JSON.parse(data);
 		
 		var translation = "";
 		var target = "";
-		
-		//console.log(data.translationContent);
 		
 		$.each(table, function(key, value) {
 			
@@ -89,50 +89,36 @@ document.addEventListener('DOMContentLoaded', () => {
 				}				
 			});			
 		});
-		
-		// Clean up the dynamically created script
-		var script = document.getElementById('jsonp-script-translation');
-		if (script) {
-			document.body.removeChild(script);
-			// console.log('SCRIPT JSONP REMOVED ...');
-		}
     }
 	
 	// Retrieve data translation table
 	function translatePage(translationFileName) {  // getTranslationTable
 		
 		return new Promise((resolve, reject) => {
-		
-			// Create a script element for the JSONP request
-			const script = document.createElement('script');
-			  
-			// Set an ID for the script element to facilitate cleanup
-			script.id = 'jsonp-script-translation';
-
-			// Define a unique callback function name
-			const callbackName = 'handleDataTranslationTableResponse';
 			
-			// Set the src attribute of the script element to the JSONP URL
-			const url = `https://script.google.com/macros/s/AKfycbxHQkpEfdW0SZ9SKmRIr97VYCLiDRX3WwRQouMCFeM_qBvd0eDWaRALCPWIhBy7KANZ/exec?callback=${callbackName}&translationFileName=${translationFileName}`;
-			script.src = url;
-
-			// Append the script to the document body
-			document.body.appendChild(script);
-			// console.log('SCRIPT JSONP CREATED ...');
-			
-			// Resolve the promise once the data is loaded
-			window[callbackName] = (data) => {
+			// Use fetch to retrieve the JSON file
+		        fetch(translationFileName)
+		            .then(response => {
+		                // Check if the response is OK (status 200)
+		                if (!response.ok) {
+		                    throw new Error('Error fetching the translation file');
+		                }
+		                // Convert the response to JSON
+		                return response.json();
+		            })
+		            .then(data => {
+		                // Resolve the Promise with the translation data
 				// console.log('LOOKING IN DATA:', data);
 				// console.log('CALLING HANDLE ...');
 				handleDataTranslationTableResponse(data);
 				// console.log('DONE HANDLE ...');
-				resolve(data);
-			};
-
-			// Reject the promise if an error occurs
-			script.onerror = (error) => {
-			  reject(error);
-			};
+				
+		                resolve(data);
+		            })
+		            .catch(error => {
+		                // Reject the Promise in case of an error
+		                reject(error);
+		            });
 		});
 	}
 	
@@ -145,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		loadingContainer.style.display = 'block'; 
 	  
 		// Call the translation function
-		translatePage("translation")
+		translatePage("/test.fkanedev.github.io/includes/translation.json")
 		.then(data => {
 			// console.log('Translation completed');
 		  
@@ -425,12 +411,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 	
 	// Define the callback function that will handle the JSONP response
-    function handleResponse(data) {
+    function handleResponse(legalItem, htmlContent) {
 		// console.log('HANDLE FUNCTION LAUNCHED ...');
 		// console.log('JSON Object:', data);
 
 		// Insert the HTML content into the modal body
-		var legalItem = data.legalItem.replace('-fr',''); 
+		legalItem = legalItem.replace('-fr',''); 
 		// console.log('in handler: '+legalItem);
 		var modalBody = document.querySelector('#'+legalItem+'-modal .modal-body');
 		if (modalBody) {
@@ -440,17 +426,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			modalBody.classList.add("text-left");
 			
 			$('.modal-body').scrollTop(0);
-			modalBody.innerHTML = data.htmlContent; // Assuming the key in the JSON object is 'htmlContent'
+			modalBody.innerHTML = htmlContent; 
 			
 		} else {
 			console.error('Modal body element not found.');
-		}
-
-		// Clean up the dynamically created script
-		var script = document.getElementById('jsonp-script');
-		if (script) {
-			document.body.removeChild(script);
-			// console.log('SCRIPT JSONP REMOVED ...');
 		}
     }
 	
@@ -459,37 +438,30 @@ document.addEventListener('DOMContentLoaded', function () {
 		// console.log('LEGAL ITEM: '+legalItem);
 		
 		return new Promise((resolve, reject) => {
-		
-			// Create a script element for the JSONP request
-			const script = document.createElement('script');
-			  
-			// Set an ID for the script element to facilitate cleanup
-			script.id = 'jsonp-script';
-
-			// Define a unique callback function name
-			const callbackName = 'handleResponse';
-			//var item = "privacyPolicy"
-			// Set the src attribute of the script element to the JSONP URL
-			const url = `https://script.google.com/macros/s/AKfycbw9b9c7UjkyYXTZO6sLZXhDcxydMDxroq65Z0IIkRjvlhe0O0IzeIdrMh0xyu4VwGMD/exec?callback=${callbackName}&legalItem=${legalItem}`;
-			script.src = url;
-
-			// Append the script to the document body
-			document.body.appendChild(script);
-			// console.log('SCRIPT JSONP CREATED ...');
 			
-			// Resolve the promise once the data is loaded
-			window[callbackName] = (data) => {
+			// Use fetch to retrieve the HTML file
+		        fetch("/test.fkanedev.github.io/includes/"+legalItem+".html")
+		            .then(response => {
+		                // Check if the response is OK (status 200)
+		                if (!response.ok) {
+		                    throw new Error('Error fetching the translation file');
+		                }
+		                // Convert the response to TEXT
+		                return response.text() ; 
+		            })
+		            .then(data => {
+		                // Resolve the Promise with the translation data
 				// console.log('LOOKING IN DATA:', data);
 				// console.log('CALLING HANDLE ...');
-				handleResponse(data);
+				handleResponse(legalItem, data);
 				// console.log('DONE HANDLE ...');
-				resolve(data);
-			};
-
-			// Reject the promise if an error occurs
-			script.onerror = (error) => {
-			  reject(error);
-			};
+				
+		                resolve(data);
+		            })
+		            .catch(error => {
+		                // Reject the Promise in case of an error
+		                reject(error);
+		            });
 		});
     }
 	
@@ -510,8 +482,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		  
 			// Loading the loadingContainer
 			var loadgbox = document.querySelector('#'+id+' .modal-body #loading-container-gbox');
-			// loadgbox.style.display = 'block';
-			
+			// loadgbox.style.display = 'block';			
 			
 			// var legal = href.replace('#', '');
 			var legal = id.replace('-modal', '');
@@ -521,8 +492,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				legal = legal+"-fr";
 			}
 			
-			if (loadgbox) {
-				
+			if (loadgbox) {				
 				fetchAndInsertHTML(legal)
 				.then(data => {
 					// console.log('Data loaded successfully:', data);
