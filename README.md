@@ -25,16 +25,15 @@ Developed according to **JAMstack** principles (JavaScript, API, Markup), this p
 5. [Project Structure](#project-structure)
 6. [Deployment](#deployment)
 7. [Sources](#sources)
-8. [License](#license)
-9. [Contact](#contact)
+8. [Contact](#contact)
 
 ---
 
-## Introduction
+## Introduction <a name="introduction"></a>
 
 Welcome to the repository for my portfolio landing page, created to showcase my projects, skills, and services as a **Cloud Software Engineer**. This portfolio is crafted with a focus on an interactive user experience, clear presentation, and mobile responsiveness. The site is developed using JAMstack principles (JavaScript, API, and Markup) and is fully hosted on GitHub Pages.
 
-## Key Features
+## Key Features <a name="key-features"></a>
 
 1. **Language Switcher**: Supports English and French, allowing users to toggle between languages without reloading the page.
 2. **Responsive Navigation**: Dynamic navigation bar that adapts to scroll position, with smooth scrolling to each section.
@@ -47,7 +46,7 @@ Welcome to the repository for my portfolio landing page, created to showcase my 
 4. **Aesthetic Animations**: Uses AOS (Animate On Scroll) for animations to enhance user engagement.
 5. **Footer Links with Modals**: Displays legal and privacy information in modals that are loaded on-demand.
 
-## Technologies Used
+## Technologies Used <a name="technologies-used"></a>
 
 - **HTML5/CSS3**: For structure and responsive styling.
 - **Bootstrap 4**: Grid layout, responsiveness, and components.
@@ -59,27 +58,91 @@ Welcome to the repository for my portfolio landing page, created to showcase my 
 - **Google Apps Script**: To handle form submissions in the Contact section.
 - **GitHub Pages**: Free static site hosting.
 
-## Development
+## Development <a name="development"></a>
 
-### Setting Up the Project
+### Key Implementations
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/username/portfolio-landing-page.git
+This project incorporates several key libraries and tools to enhance interactivity, user experience, and functionality. Here’s a breakdown of how each technology is implemented in the portfolio landing page.
+
+#### Switchery for Language Switching
+
+Switchery is used to create a toggle switch allowing users to change the language of the page dynamically (English to French). The switch initiates an event listener on change, which loads translations from a JSON file and updates the page content accordingly without reloading the page.
+
+- **Implementation**: The toggle switch is linked to an event handler in `script.js` which, when activated, fetches the translation JSON file and updates specific elements marked with classes matching the JSON keys.
+- **Example**:
+   ```javascript
+   const langSwitch = document.querySelector('#langSwitch');
+   langSwitch.onchange = function() {
+       // Show loading spinner while switching
+       loadingContainer.style.display = 'block'; 
+       translatePage("/includes/translation.json").then(() => {
+           loadingContainer.style.display = 'none'; 
+           smallElement.setAttribute('data-text', langSwitch.checked ? 'FR' : 'EN');
+       });
+   };
    ```
-2. Navigate into the project directory:
-   ```bash
-   cd portfolio-landing-page
+
+#### Glightbox for Project Showcase
+
+Glightbox is used to display project details in an elegant, lightbox-style overlay. This improves user engagement by allowing them to explore each project’s key information and technologies without leaving the page.
+
+- **Implementation**: Each project item in the Portfolio section uses `data-glightbox` attributes, linking to a lightbox instance initialized in `script.js`. Projects are visually enhanced with images and badges highlighting key technologies.
+- **Example**:
+   ```javascript
+   var lightbox = GLightbox({
+       selector: '.glightbox',
+       touchNavigation: true,
+       loop: false,
+       openEffect: 'zoom',
+       closeEffect: 'fade',
+   });
    ```
-3. Open `index.html` in your preferred editor and start a local server (e.g., with VS Code's Live Server extension) to view changes in real time.
 
-### Customization Options
+#### AOS (Animate On Scroll) for Smooth Animations
 
-- **Updating Translation Content**: Language translations are loaded from a JSON file located at `/includes/translation.json`.
-- **Project and Service Details**: All project descriptions, titles, and icons are in the `index.html` file under respective sections (`#portfolio`, `#services`).
-- **Contact Form**: Update the Google Apps Script URL in `script.js` for handling form submissions.
+AOS (Animate On Scroll) brings smooth animations to different sections as they enter the viewport, making the page feel dynamic and engaging.
 
-## Project Structure
+- **Implementation**: Elements throughout the page are assigned data attributes like `data-aos="fade-up"` or `data-aos="fade-right"`, which control how each component animates upon scrolling. AOS is initialized in `script.js` with specific easing and duration configurations.
+- **Example**:
+   ```javascript
+   AOS.init({
+       easing: 'ease-in-out',
+       offset: 120,
+       duration: 1500,
+   });
+   ```
+
+#### Contact Form Integration with Google Apps Script
+
+The contact form is integrated with Google Apps Script to handle form submissions. This setup enables form data to be sent to a Google Sheets document or email, providing an effective way to handle inquiries directly from the landing page.
+
+- **Implementation**: The form data is collected and converted into JSON, then sent via a POST request to a Google Apps Script URL specified in `script.js`. Upon submission, a success message is displayed, and the form is reset.
+- **Example**:
+   ```javascript
+   function submitForm() {
+    const formData = new FormData(document.getElementById('contactForm'));
+    const jsonData = {};
+    formData.forEach((value, key) => { jsonData[key] = value; });
+    fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(jsonData),
+    })
+    .then(response => {
+        document.getElementById('sent-message').style.display = 'block';
+        document.getElementById('contactForm').reset();
+    })
+    .catch(error => console.error('Error:', error));
+   }
+   ```
+#### Additional Development Details
+
+1. Responsive Design: The layout uses Bootstrap’s grid system and media queries to ensure optimal viewing across devices.
+2. Smooth Scrolling: Smooth scroll effects are implemented with native JavaScript, allowing users to navigate between sections effortlessly.
+
+Each technology in this project works together to create an efficient, visually appealing, and user-friendly portfolio site.
+
+## Project Structure <a name="project-structure"></a>
 
 ```graphql
 portfolio-landing-page/
@@ -100,7 +163,7 @@ portfolio-landing-page/
 └── LICENSE                    # License for the project
 ```
 
-## Deployment
+## Deployment <a name="deployment"></a>
 
 This project is deployed using **GitHub Pages**.
 
@@ -111,7 +174,7 @@ This project is deployed using **GitHub Pages**.
 3. In the **Source** section, choose `main` branch and click **Save**.
 4. The site will be available at `https://fkanedev.github.io`.
 
-## Sources
+## Sources <a name="sources"></a>
 
 - [Bootstrap Documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 - [Switchery Documentation](https://github.com/abpetkov/switchery)
@@ -119,11 +182,7 @@ This project is deployed using **GitHub Pages**.
 - [Glightbox Documentation](https://biati-digital.github.io/glightbox/)
 - [Google Apps Script Guide for Forms](https://developers.google.com/apps-script/guides/web)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
+## Contact <a name="contact"></a>
 
 Feel free to reach out via the contact form on the portfolio or through the following channels:
 
